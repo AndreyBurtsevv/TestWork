@@ -22,7 +22,7 @@ namespace TestWork
 
             Array.Sort(nums);
 
-            int point = PointThatDivide(nums); 
+            int point = PointThatDivide(nums);
 
             if (point != -1 && point != nums.Length) // Can be divided into 2 equal parts or not
             {
@@ -44,7 +44,7 @@ namespace TestWork
             for (int i = 0; i < arr.Length; i++)
             {
                 leftSum += arr[i];
-            } 
+            }
 
             double rightSum = 0;
 
@@ -57,7 +57,7 @@ namespace TestWork
                 if (rightSum == leftSum)
                 {
                     return i;
-                }                    
+                }
             }
             return -1;
         }
@@ -91,7 +91,7 @@ namespace TestWork
 
         public double[] PasteBetweenElements(double[] nums)
         {
-            #region Check
+            #region CheckData
             if (nums == null)
             {
                 throw new Exception("Array can`t be empty");
@@ -100,7 +100,7 @@ namespace TestWork
             {
                 return nums;
             }
-            #endregion Check
+            #endregion CheckData
 
             double[] sumArray = new double[nums.Length - 1];
 

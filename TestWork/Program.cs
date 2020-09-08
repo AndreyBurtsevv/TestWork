@@ -8,7 +8,7 @@ namespace TestWork
     {
         public static void Main(String[] args)
         {
-            WorkWithArray workWithArray = new WorkWithArray();
+            IWorkWithArray workWithArray = new WorkWithArray();
 
             double[] test = {2,3,6,8};
 
