@@ -10,7 +10,7 @@ namespace TestWork
         public Arrays DivisionArray(double[] nums)
         {
             #region CheckData
-            if (nums == null)
+            if (nums == null || nums.Length == 0)
             {
                 throw new Exception("Array can`t be empty");
             }
@@ -92,7 +92,7 @@ namespace TestWork
         public double[] PasteBetweenElements(double[] nums)
         {
             #region CheckData
-            if (nums == null)
+            if (nums == null || nums.Length == 0)
             {
                 throw new Exception("Array can`t be empty");
             }
