@@ -37,7 +37,7 @@ namespace TestWork
                 return GreedyAlgotithm(nums); // Else use greedy algorithm
         }
 
-        static int PointThatDivide(double[] arr)
+        private static int PointThatDivide(double[] arr)
         {
             double leftSum = 0;
 
